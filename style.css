@@ -1,0 +1,116 @@
+.dropbtn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(0, 0, 0);}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #000000;}
+
+
+  /* div.ex2 {
+    width: auto;
+    padding: auto;
+    box-sizing: content-box;
+    background-color: lightblue;
+  } */
+
+#gms{
+    overflow: scroll;
+    
+    float:left
+}
+
+.right {
+    padding: 10px;
+}
+
+.left {
+    grid-area: left;
+  }
+
+  .middle {
+    grid-area: middle;
+  }
+
+  .right {
+    grid-area: right;
+  }
+
+  .footer {
+    grid-area: footer;
+    background-color: #00aeff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left middle middle right right' 
+      'footer footer footer footer footer footer';
+  }
+
+  .header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+  }
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+  }
+  
+  #img{
+      
+    height: 50%;
+    width: 25%;
+
+    position: inherit;
+    float: left
+    }
+
+#gm{
+    text-align: center;
+    
+}
+
+#em{
+    text-align: center;
+    
+}
